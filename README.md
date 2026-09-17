@@ -49,13 +49,153 @@ Because we control the exact architecture of all 74 supported algorithms, we don
 
 ### Domain Coverage
 
-Rather than exposing the exact factory registry, here is a conceptual breakdown of the 70+ natively supported algorithmic targets inside the engine:
+Here is the breakdown of the 100+ natively supported algorithmic targets inside the engine:
 
-* **Topological & Vision:** Custom multi-layer perceptron builders, deep residual pathways, and standard convolutional feature extractors.
-* **Sequential Context:** Gated recurrent mechanisms (both unidirectional and bidirectional) and self-attention blocks for NLP.
-* **Generative:** Adversarial discriminator/generator pairs and variational latent-space encoders.
-* **Hyperplane & Ensemble:** Standard margin classifiers, extreme gradient boosted tree ensembles, and density-based spatial clustering.
-* **Reward Optimization:** Tabular and deep Q-state approximators alongside policy gradient evaluators.
+```mermaid
+pie title Domain Coverage Distribution
+    "Regression" : 18
+    "Classification" : 21
+    "Clustering" : 13
+    "Dimensionality Reduction" : 5
+    "Association Rule Mining" : 2
+    "Time Series Forecasting" : 8
+    "DL — Foundational Networks" : 4
+    "DL — CNNs" : 6
+    "DL — Sequence Models" : 10
+    "DL — Generative Models" : 5
+    "Hybrid & Ensemble" : 3
+    "Statistical & Probabilistic" : 4
+    "Anomaly Detection" : 4
+```
+
+#### Regression (18)
+- Linear Regression
+- Polynomial Regression
+- Ridge Regression
+- Lasso Regression
+- Elastic Net
+- Support Vector Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- XGBoost Regressor
+- LightGBM Regressor
+- CatBoost Regressor
+- AdaBoost Regressor
+- Quantile Regression
+- Huber Regressor
+- RANSAC Regressor
+- Theil-Sen Estimator
+- Isotonic Regression
+- Poisson GLM
+
+#### Classification (21)
+- Logistic Regression
+- K-Nearest Neighbors
+- Gaussian Naive Bayes
+- Multinomial Naive Bayes
+- Bernoulli Naive Bayes
+- Decision Tree Classifier
+- Random Forest Classifier
+- SVM (Linear Kernel)
+- SVM (RBF Kernel)
+- SVM (Polynomial Kernel)
+- XGBoost Classifier
+- LightGBM Classifier
+- CatBoost Classifier
+- AdaBoost Classifier
+- Linear Discriminant Analysis
+- Quadratic Discriminant Analysis
+- Perceptron
+- ExtraTrees Classifier
+- SGD Classifier
+- Passive-Aggressive Classifier
+- Nearest Centroid (Rocchio)
+
+#### Clustering (13)
+- K-Means Clustering
+- Hierarchical / Agglomerative
+- DBSCAN
+- Gaussian Mixture Models
+- Mean Shift
+- OPTICS
+- HDBSCAN
+- Spectral Clustering
+- Affinity Propagation
+- BIRCH
+- K-Medoids (PAM)
+- Fuzzy C-Means (FCM)
+- Mini-Batch K-Means
+
+#### Dimensionality Reduction (5)
+- PCA
+- t-SNE
+- LDA (Dim Reduction)
+- UMAP
+- Autoencoder (Dim Reduction)
+
+#### Association Rule Mining (2)
+- Apriori
+- FP-Growth
+
+#### Time Series Forecasting (8)
+- ARIMA / SARIMA
+- Prophet
+- Exponential Smoothing (Holt-Winters)
+- SARIMAX
+- Vector AutoRegression (VAR)
+- Theta Forecasting Method
+- Auto-ARIMA
+- Croston's Method
+
+#### Deep Learning — Foundational Networks (4)
+- Perceptron (DL)
+- MLP / Feedforward NN
+- Custom NN Builder
+- TabNet
+
+#### Deep Learning — Convolutional Neural Networks (6)
+- Basic CNN
+- LeNet-style CNN
+- AlexNet-style CNN
+- VGG-style CNN
+- ResNet (Transfer Learning)
+- Vision Transformer (ViT-Small)
+
+#### Deep Learning — Sequence Models (10)
+- Vanilla RNN
+- LSTM
+- GRU
+- Bi-LSTM
+- Bi-GRU
+- Seq2Seq
+- Attention Mechanism
+- Transformer (Basic)
+- Temporal Convolutional Network (TCN)
+- Temporal Fusion Transformer (TFT)
+
+#### Deep Learning — Generative Models (5)
+- Autoencoder (Vanilla)
+- Denoising Autoencoder
+- Variational Autoencoder (VAE)
+- GAN (Basic)
+- Diffusion Model (DDPM 1D)
+
+#### Hybrid & Ensemble Architectures (3)
+- CNN-LSTM
+- LSTM-XGBoost
+- Autoencoder + Classifier
+
+#### Statistical & Probabilistic Models (4)
+- Bayesian Linear Regression
+- Hidden Markov Model
+- Markov Chain
+- Gaussian Process
+
+#### Anomaly Detection (4)
+- Isolation Forest
+- One-Class SVM
+- Local Outlier Factor
+- Elliptic Envelope
 
 ### The Separation of Concerns
 
