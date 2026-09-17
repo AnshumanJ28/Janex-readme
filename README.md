@@ -52,7 +52,7 @@ Because we control the exact architecture of all 74 supported algorithms, we don
 Here is the breakdown of the 100+ natively supported algorithmic targets inside the engine:
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"pie1": "#FF595E", "pie2": "#FFCA3A", "pie3": "#8AC926", "pie4": "#1982C4", "pie5": "#6A4C93", "pie6": "#F15BB5", "pie7": "#00F5D4", "pie8": "#00BBF9", "pie9": "#FEE440", "pie10": "#9B5DE5", "pie11": "#F15BB5", "pie12": "#E56B6F", "pieStrokeColor": "#ffffff", "pieStrokeWidth": "2px", "pieOpacity": "1.0"}}}%%
+%%{init: {"theme": "default", "themeVariables": {"pie1": "#0000FF", "pie2": "#00008B", "pie3": "#FFFF00", "pie4": "#FF0000", "pie5": "#00FF00", "pie6": "#006400", "pie7": "#800080", "pie8": "#FFA500", "pie9": "#00FFFF", "pie10": "#FF00FF", "pie11": "#A52A2A", "pie12": "#FFC0CB"}}}%%
 pie title Domain Coverage Distribution
     "Regression" : 18
     "Classification" : 21
