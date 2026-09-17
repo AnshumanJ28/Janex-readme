@@ -52,6 +52,7 @@ Because we control the exact architecture of all 74 supported algorithms, we don
 Here is the breakdown of the 100+ natively supported algorithmic targets inside the engine:
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"pie1": "#FF595E", "pie2": "#FFCA3A", "pie3": "#8AC926", "pie4": "#1982C4", "pie5": "#6A4C93", "pie6": "#F15BB5", "pie7": "#00F5D4", "pie8": "#00BBF9", "pie9": "#FEE440", "pie10": "#9B5DE5", "pie11": "#F15BB5", "pie12": "#E56B6F", "pieStrokeColor": "#ffffff", "pieStrokeWidth": "2px", "pieOpacity": "1.0"}}}%%
 pie title Domain Coverage Distribution
     "Regression" : 18
     "Classification" : 21
